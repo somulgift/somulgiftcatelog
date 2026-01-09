@@ -1,0 +1,105 @@
+body { background: linear-gradient(135deg, #FADADD, #AEC6CF); /* pastel pink → pastel blue */ min-height: 100vh; margin: 0; }
+
+/*body {
+  background: url("https://images.unsplash.com/photo-1603052875676-3f3b6a7d5f6a") repeat;
+  background-size: cover;
+}*/
+
+
+header { background:#AEC6CF; color:#333; padding:1rem; }
+nav ul { list-style:none; display:flex; gap:1rem; }
+nav a { color:#fff; text-decoration:none; }
+.hero { background:#f4f4f4; text-align:center; padding:2rem; }
+.btn { background:#007BFF; color:#fff; padding:10px 20px; text-decoration:none; }
+.product-grid { display:flex; gap:2rem; justify-content:center; }
+.product img { width:200px; border-radius:8px; }
+footer { background:#222; color:#ccc; text-align:center; padding:1rem; }
+.intro { text-align: center; padding: 3rem 2rem; background: #f4f4f4
+; /* pastel pink background */ color: #333; border-radius: 10px; } .intro h1 { font-size: 2.5rem; margin-bottom: 1rem; } .intro p { font-size: 1.2rem; margin: 0.8rem 0; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  /*gap: 20px; /* spacing between items */
+  /*margin: 20px auto;*/
+  max-width: 1200px; /* optional, keeps layout neat */
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+}
+.product img {
+  width: 100%;          /* fills the product card width */
+  height: 250px;        /* fixed height */
+  object-fit: cover;    /* crops/zooms to fit without distortion */
+  border-radius: 8px;   /* optional rounded corners */
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #77DD77; /* pastel green */
+  color: #333;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #57C957;
+}
+
+.faq h3 {
+  margin-top: 20px;
+  color: #007BFF;
+}
+
+main a img { margin: 10px; transition: transform 0.2s; } main a img:hover { transform: scale(1.2); /* zoom effect */ }
+.social-link {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-link i {
+  margin-right: 8px;
+}
+
+.social-link:hover {
+  color: #007BFF; /* changes color on hover */
+}
+.redbook {  color: #007BFF;}
+.product-detail {
+  text-align: center;
+  padding: 2rem;
+}
+
